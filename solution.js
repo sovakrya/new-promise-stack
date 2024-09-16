@@ -19,7 +19,7 @@ export async function promiseStack(promises, countProcessedPromises) {
      
     } else {
       for (let promise of promises) {
-          console.log(await promise());
+          await promise();
         }
     }
   }
